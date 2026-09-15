@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key><string>pt_BR</string>
+    <key>CFBundleExecutable</key><string>Pavlek</string>
+    <key>CFBundleIdentifier</key><string>com.pavlek.macos.demo</string>
+    <key>CFBundleInfoDictionaryVersion</key><string>6.0</string>
+    <key>CFBundleName</key><string>Pavlek</string>
+    <key>CFBundlePackageType</key><string>APPL</string>
+    <key>CFBundleShortVersionString</key><string>0.2.3</string>
+    <key>CFBundleVersion</key><string>5</string>
+    <key>LSMinimumSystemVersion</key><string>14.0</string>
+    <key>NSHighResolutionCapable</key><true/>
+    <key>NSQuitAlwaysKeepsWindows</key><false/>
+    <key>NSLocalNetworkUsageDescription</key>
+    <string>O Pavlak usa a rede local para conectar com segurança o Mac e o iPhone e trocar apenas comandos e resultados solicitados.</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>O Pavlak acessa a Fototeca somente após sua autorização para localizar e apresentar as fotos solicitadas, sem modificar ou excluir itens.</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>O Pavlak usa o microfone somente enquanto você dita ou conversa por voz e não salva a gravação.</string>
+    <key>NSSpeechRecognitionUsageDescription</key>
+    <string>O Pavlak usa o reconhecimento de fala do macOS para converter sua voz em texto no campo de comando.</string>
+    <key>NSBonjourServices</key>
+    <array>
+        <string>_pavlak-link._tcp</string>
+    </array>
+</dict>
+</plist>

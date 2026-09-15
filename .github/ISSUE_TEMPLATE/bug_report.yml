@@ -1,0 +1,37 @@
+name: Bug report
+description: Relatar um comportamento reproduzível sem dados pessoais.
+title: "[bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Não inclua documentos, fotos, OCR, caminhos locais, chaves ou dumps de erro pessoais. Use uma fixture sintética.
+  - type: input
+    id: version
+    attributes:
+      label: Versão/commit
+      description: Informe a versão ou o commit local, se houver.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reprodução
+      description: Comando, fixture sintética, passos e resultado observado.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Resultado esperado
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validação
+      description: Comandos executados, dispositivo e permissões, sem segredos.
+    validations:
+      required: true

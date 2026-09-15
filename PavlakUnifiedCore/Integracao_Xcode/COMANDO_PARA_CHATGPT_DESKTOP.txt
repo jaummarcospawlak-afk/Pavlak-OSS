@@ -1,0 +1,12 @@
+Trabalhe diretamente no projeto Pavlak aberto no Xcode, preservando integralmente a versão atual antes de qualquer alteração.
+
+1. Crie uma cópia local e datada da pasta do projeto.
+2. Adicione a pasta PavlakUnifiedCore como dependência local pelo Xcode e vincule o produto PavlakCore somente ao target macOS.
+3. Não apague nem sobrescreva os arquivos antigos de Keychain, cliente OpenAI ou roteamento. Retire-os apenas do fluxo ativo quando a nova integração estiver validada.
+4. Use PavlakChatView() como tela operacional de teste.
+5. Confirme no target: App Sandbox ativo, Outgoing Connections (Client) ativo e User Selected File em Read Only.
+6. Compile e corrija somente incompatibilidades reais do SDK do macOS, sem alterar a arquitetura do módulo.
+7. Execute, nesta ordem: “Abra o Safari”; “Pesquise OpenAI Responses API no Safari”; escolha uma pasta e execute “Localize meu contrato de locação no Finder”; conecte a OpenAI e execute um pedido complexo.
+8. Confirme que a requisição /v1/responses contém Authorization: Bearer e que não ocorre “Missing bearer authentication in header”. Nunca exponha nem imprima a chave.
+9. Preserve os registros cronológicos em Application Support/Pavlak/Registros.
+10. Ao final, informe objetivamente: compilação, quatro testes, erros ainda existentes e arquivos alterados.

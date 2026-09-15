@@ -1,0 +1,28 @@
+PAVLAK — INTEGRAÇÃO NO XCODE
+
+1. Preserve o projeto atual. Não apague os arquivos antigos.
+2. No Xcode: File > Add Package Dependencies > Add Local…
+3. Selecione a pasta PavlakUnifiedCore.
+4. Adicione o produto PavlakCore ao target macOS do Pavlak.
+5. No ContentView atual, importe PavlakCore e apresente PavlakChatView().
+
+Exemplo:
+
+import SwiftUI
+import PavlakCore
+
+struct ContentView: View {
+    var body: some View {
+        PavlakChatView()
+    }
+}
+
+CAPABILITIES DO TARGET MACOS
+- App Sandbox: ativo.
+- Outgoing Connections (Client): ativo.
+- User Selected File: Read Only.
+
+IMPORTANTE
+- Não copie KeychainStore.swift, OpenAIResponsesClient.swift ou PavlekCore.swift antigos para dentro deste pacote.
+- O novo módulo tem nomes próprios e pode coexistir com o código anterior até a validação.
+- Depois do primeiro build, abra a engrenagem do Pavlak, valide a OpenAI e escolha a pasta autorizada.

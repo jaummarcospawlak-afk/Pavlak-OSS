@@ -1,0 +1,61 @@
+# Swift/Xcode generated output
+.build/
+.build-*/
+.codex-build/
+.swiftpm/
+DerivedData/
+Build/
+*.app/
+
+# Xcode user state and local signing material
+.DS_Store
+PavlakIOS.xcodeproj/xcuserdata/
+PavlakIOS.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcuserstate
+*.mobileprovision
+*.p12
+*.pfx
+*.cer
+*.der
+*.pem
+*.key
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.local
+*.secret
+
+# Private source material, crash exports, recordings, and local backups.
+# These paths are intentionally kept out of the public candidate; do not
+# delete them from a working copy without an explicit preservation plan.
+Backups/
+Relatorios de Erro/
+Diagnostics/
+/Docs-private/
+/CONTEXTO_GERAL_DO_ACERVO.md
+/RELATORIO_*.md
+/Captura de Tela *.png
+/Relatório de Sistema *.png
+/IMG_*.HEIC
+/Filme *.mov
+/Pavlak_video_*.mp4
+
+# Historical/private reports in the legacy package
+PavlakUnifiedCore/RELATORIO_*.txt
+PavlakUnifiedCore/VALIDACAO_*.txt
+
+# Release preparation and local execution records
+/private/
+/.git-public/
+/ROLLBACK_RECORD*.md
+*.log
+*.ips
+*.crash
+*.xcresult/
+*.zip
+*.heic
+*.HEIC
+__pycache__/
+*.pyc

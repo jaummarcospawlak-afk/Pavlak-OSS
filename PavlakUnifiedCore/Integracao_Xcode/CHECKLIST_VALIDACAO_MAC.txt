@@ -1,0 +1,32 @@
+PAVLAK — CHECKLIST DE VALIDAÇÃO REAL NO MAC
+
+ANTES DO TESTE
+[ ] Fazer uma cópia da pasta atual do projeto.
+[ ] Adicionar PavlakUnifiedCore como pacote local no Xcode.
+[ ] Vincular o produto PavlakCore apenas ao target macOS.
+[ ] Ativar App Sandbox.
+[ ] Ativar Outgoing Connections (Client).
+[ ] Ativar User Selected File: Read Only.
+[ ] Usar PavlakChatView() na tela principal de teste.
+
+TESTES OBRIGATÓRIOS
+1. Digitar: Abra o Safari.
+   Resultado esperado: Safari abre e o Pavlak confirma a ação.
+
+2. Digitar: Pesquise OpenAI Responses API no Safari.
+   Resultado esperado: Safari abre uma pesquisa visível.
+
+3. Na engrenagem, escolher uma pasta de teste.
+   Digitar: Localize meu contrato de locação no Finder.
+   Resultado esperado: lista curta e relevante, limitada à pasta autorizada.
+
+4. Na engrenagem, conectar a chave da OpenAI.
+   Digitar um pedido complexo, por exemplo:
+   Pesquise as informações atuais sobre a Responses API e explique como ela será usada pelo Pavlak.
+   Resultado esperado: interpretação via OpenAI; nenhuma mensagem “Missing bearer authentication in header”.
+
+CRITÉRIO DE APROVAÇÃO
+[ ] Quatro testes concluídos.
+[ ] Nenhum código antigo apagado antes da aprovação.
+[ ] Log criado em Application Support/Pavlak/Registros.
+[ ] Caso haja erro HTTP, registrar status e request_id exibidos.

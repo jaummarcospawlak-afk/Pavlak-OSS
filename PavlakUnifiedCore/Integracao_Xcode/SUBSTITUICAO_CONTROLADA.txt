@@ -1,0 +1,10 @@
+SUBSTITUIÇÃO CONTROLADA APÓS O TESTE
+
+Somente depois de confirmar quatro comandos reais:
+1. Remova da tela principal o painel antigo.
+2. Mantenha o código antigo em uma pasta de backup fora do target.
+3. Use PavlakChatView como interface operacional.
+4. Use PavlakAgentEngine.shared para App Intents e demais entradas.
+5. Não mantenha dois clientes OpenAI ativos no mesmo fluxo.
+
+O erro “Missing bearer authentication in header” é atacado pela unificação do Keychain e pela criação centralizada de URLRequest autenticada.

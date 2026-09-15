@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  swift:
+    runs-on: macos-26
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Swift build
+        run: swift build --disable-sandbox
+      - name: Swift tests
+        run: swift test --disable-sandbox
+      - name: Unified core tests
+        working-directory: PavlakUnifiedCore
+        run: swift test --disable-sandbox
+
+  ios-simulator:
+    runs-on: macos-26
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Build iOS Simulator target
+        run: >-
+          xcodebuild -project PavlakIOS.xcodeproj
+          -scheme 'Pavlak Photo Search'
+          -configuration Debug
+          -sdk iphonesimulator
+          -destination 'generic/platform=iOS Simulator'
+          -derivedDataPath "$RUNNER_TEMP/pavlak-derived-data"
+          CODE_SIGNING_ALLOWED=NO build

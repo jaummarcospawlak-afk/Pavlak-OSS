@@ -1,0 +1,27 @@
+name: Feature request
+description: Propor uma melhoria alinhada à busca autorizada e local-first.
+title: "[enhancement] "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema real
+      description: Que dificuldade de uma pessoa usuária será reduzida?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Escopo proposto
+      description: Explique fonte, permissão, persistência e ação explícita.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critério de aceitação
+      description: Inclua um teste automatizado ou roteiro manual com fixture sintética.
+    validations:
+      required: true

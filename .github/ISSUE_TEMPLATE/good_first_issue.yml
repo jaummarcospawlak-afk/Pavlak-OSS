@@ -1,0 +1,20 @@
+name: Good first issue
+description: Tarefa pequena e bem delimitada para uma primeira contribuição.
+title: "[good first issue] "
+labels:
+  - good first issue
+body:
+  - type: textarea
+    id: task
+    attributes:
+      label: Tarefa
+      description: Descreva um resultado observável e os arquivos prováveis.
+    validations:
+      required: true
+  - type: textarea
+    id: checks
+    attributes:
+      label: Como verificar
+      description: Comando, teste ou roteiro com dados sintéticos.
+    validations:
+      required: true

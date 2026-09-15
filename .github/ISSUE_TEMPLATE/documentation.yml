@@ -1,0 +1,19 @@
+name: Documentation
+description: Melhorar documentação, exemplos ou onboarding.
+title: "[documentation] "
+labels:
+  - documentation
+body:
+  - type: textarea
+    id: gap
+    attributes:
+      label: Lacuna
+      description: O que está difícil de entender ou reproduzir?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposta
+    validations:
+      required: true

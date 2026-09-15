@@ -1,0 +1,343 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B00100000000000000000001 /* AgentCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000001 /* AgentCore.swift */; };
+		B00100000000000000000002 /* AgentModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000002 /* AgentModels.swift */; };
+		B00100000000000000000003 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000003 /* ContentView.swift */; };
+		B00100000000000000000004 /* IOSContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000004 /* IOSContentView.swift */; };
+		B00100000000000000000005 /* IntentParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000005 /* IntentParser.swift */; };
+		B00100000000000000000006 /* ModelClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000006 /* ModelClient.swift */; };
+		B00100000000000000000007 /* PavlekApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000007 /* PavlekApp.swift */; };
+		B00100000000000000000008 /* PhotoIndexModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000008 /* PhotoIndexModels.swift */; };
+		B00100000000000000000009 /* PhotoIndexStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000009 /* PhotoIndexStore.swift */; };
+		B0010000000000000000000A /* PhotoIndexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000000A /* PhotoIndexer.swift */; };
+		B0010000000000000000000B /* PhotoLibraryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000000B /* PhotoLibraryService.swift */; };
+		B0010000000000000000000C /* ToolRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000000C /* ToolRouter.swift */; };
+		B0010000000000000000000D /* PavlakLinkMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000000E /* PavlakLinkMessage.swift */; };
+		B0010000000000000000000E /* PavlakLinkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0010000000000000000000F /* PavlakLinkService.swift */; };
+		B0010000000000000000000F /* PavlakLinkStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000010 /* PavlakLinkStatusView.swift */; };
+		B00100000000000000000010 /* PavlakLinkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000011 /* PavlakLinkViewModel.swift */; };
+		B00100000000000000000011 /* PhotoAlbumService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000012 /* PhotoAlbumService.swift */; };
+		B00100000000000000000012 /* PhotoAlbumViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000013 /* PhotoAlbumViews.swift */; };
+		B00100000000000000000013 /* ConnectorRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000014 /* ConnectorRegistry.swift */; };
+		B00100000000000000000014 /* ConnectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000015 /* ConnectionsView.swift */; };
+		B00100000000000000000015 /* UniversalResultComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000016 /* UniversalResultComponents.swift */; };
+		B00100000000000000000016 /* PavlakErrorReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000017 /* PavlakErrorReporter.swift */; };
+		B00100000000000000000017 /* PavlakExecutionPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000018 /* PavlakExecutionPipeline.swift */; };
+		B00100000000000000000018 /* PavlakLinkAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000019 /* PavlakLinkAuthentication.swift */; };
+		B00100000000000000000019 /* PhotoSpotlightIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000020 /* PhotoSpotlightIndex.swift */; };
+		B00100000000000000000020 /* OpenAIUsagePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000021 /* OpenAIUsagePolicy.swift */; };
+		B00100000000000000000030 /* IOSChatClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000030 /* IOSChatClient.swift */; };
+		B00100000000000000000031 /* IOSChatState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000031 /* IOSChatState.swift */; };
+		B00100000000000000000032 /* OpenAIKeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000032 /* OpenAIKeyStore.swift */; };
+		B00100000000000000000033 /* IOSDocumentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000033 /* IOSDocumentStore.swift */; };
+		B00100000000000000000034 /* IOSCommandRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000034 /* IOSCommandRouting.swift */; };
+		B00100000000000000000035 /* IOSOpenAISettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000035 /* IOSOpenAISettingsView.swift */; };
+		B00100000000000000000036 /* PavlakAIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000036 /* PavlakAIConfiguration.swift */; };
+		B00100000000000000000037 /* CloudSafety.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00100000000000000000037 /* CloudSafety.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F00100000000000000000001 /* AgentCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentCore.swift; sourceTree = "<group>"; };
+		F00100000000000000000002 /* AgentModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentModels.swift; sourceTree = "<group>"; };
+		F00100000000000000000003 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F00100000000000000000004 /* IOSContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSContentView.swift; sourceTree = "<group>"; };
+		F00100000000000000000005 /* IntentParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentParser.swift; sourceTree = "<group>"; };
+		F00100000000000000000006 /* ModelClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelClient.swift; sourceTree = "<group>"; };
+		F00100000000000000000007 /* PavlekApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PavlekApp.swift; sourceTree = "<group>"; };
+		F00100000000000000000008 /* PhotoIndexModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoIndexModels.swift; sourceTree = "<group>"; };
+		F00100000000000000000009 /* PhotoIndexStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoIndexStore.swift; sourceTree = "<group>"; };
+		F0010000000000000000000A /* PhotoIndexer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoIndexer.swift; sourceTree = "<group>"; };
+		F0010000000000000000000B /* PhotoLibraryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryService.swift; sourceTree = "<group>"; };
+		F0010000000000000000000C /* ToolRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolRouter.swift; sourceTree = "<group>"; };
+		F0010000000000000000000D /* Pavlak Photo Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pavlak Photo Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0010000000000000000000E /* PavlakLinkMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PavlakLinkMessage.swift; sourceTree = "<group>"; };
+		F0010000000000000000000F /* PavlakLinkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PavlakLinkService.swift; sourceTree = "<group>"; };
+		F00100000000000000000010 /* PavlakLinkStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PavlakLinkStatusView.swift; sourceTree = "<group>"; };
+		F00100000000000000000011 /* PavlakLinkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PavlakLinkViewModel.swift; sourceTree = "<group>"; };
+		F00100000000000000000012 /* PhotoAlbumService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAlbumService.swift; sourceTree = "<group>"; };
+		F00100000000000000000013 /* PhotoAlbumViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAlbumViews.swift; sourceTree = "<group>"; };
+		F00100000000000000000014 /* ConnectorRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectorRegistry.swift; sourceTree = "<group>"; };
+		F00100000000000000000015 /* ConnectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionsView.swift; sourceTree = "<group>"; };
+		F00100000000000000000016 /* UniversalResultComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalResultComponents.swift; sourceTree = "<group>"; };
+		F00100000000000000000017 /* PavlakErrorReporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PavlakErrorReporter.swift; sourceTree = "<group>"; };
+		F00100000000000000000018 /* PavlakExecutionPipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PavlakExecutionPipeline.swift; sourceTree = "<group>"; };
+		F00100000000000000000019 /* PavlakLinkAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PavlakLinkAuthentication.swift; sourceTree = "<group>"; };
+		F00100000000000000000020 /* PhotoSpotlightIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSpotlightIndex.swift; sourceTree = "<group>"; };
+		F00100000000000000000021 /* OpenAIUsagePolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIUsagePolicy.swift; sourceTree = "<group>"; };
+		F00100000000000000000030 /* IOSChatClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSChatClient.swift; sourceTree = "<group>"; };
+		F00100000000000000000031 /* IOSChatState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSChatState.swift; sourceTree = "<group>"; };
+		F00100000000000000000032 /* OpenAIKeyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIKeyStore.swift; sourceTree = "<group>"; };
+		F00100000000000000000033 /* IOSDocumentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSDocumentStore.swift; sourceTree = "<group>"; };
+		F00100000000000000000034 /* IOSCommandRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSCommandRouting.swift; sourceTree = "<group>"; };
+		F00100000000000000000035 /* IOSOpenAISettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSOpenAISettingsView.swift; sourceTree = "<group>"; };
+		F00100000000000000000036 /* PavlakAIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PavlakAIConfiguration.swift; sourceTree = "<group>"; };
+		F00100000000000000000037 /* CloudSafety.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudSafety.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D00100000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A00100000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A00100000000000000000002 /* Sources/Pavlek */,
+				A00100000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A00100000000000000000002 /* Sources/Pavlek */ = {
+			isa = PBXGroup;
+			children = (
+				F00100000000000000000001 /* AgentCore.swift */,
+				F00100000000000000000035 /* IOSOpenAISettingsView.swift */,
+				F00100000000000000000036 /* PavlakAIConfiguration.swift */,
+				F00100000000000000000037 /* CloudSafety.swift */,
+				F00100000000000000000034 /* IOSCommandRouting.swift */,
+				F00100000000000000000033 /* IOSDocumentStore.swift */,
+				F00100000000000000000032 /* OpenAIKeyStore.swift */,
+				F00100000000000000000031 /* IOSChatState.swift */,
+				F00100000000000000000030 /* IOSChatClient.swift */,
+				F00100000000000000000002 /* AgentModels.swift */,
+				F00100000000000000000003 /* ContentView.swift */,
+				F00100000000000000000004 /* IOSContentView.swift */,
+				F00100000000000000000005 /* IntentParser.swift */,
+				F00100000000000000000006 /* ModelClient.swift */,
+				F00100000000000000000007 /* PavlekApp.swift */,
+				F00100000000000000000008 /* PhotoIndexModels.swift */,
+				F00100000000000000000009 /* PhotoIndexStore.swift */,
+				F0010000000000000000000A /* PhotoIndexer.swift */,
+				F0010000000000000000000B /* PhotoLibraryService.swift */,
+				F0010000000000000000000C /* ToolRouter.swift */,
+				F0010000000000000000000E /* PavlakLinkMessage.swift */,
+				F0010000000000000000000F /* PavlakLinkService.swift */,
+				F00100000000000000000010 /* PavlakLinkStatusView.swift */,
+				F00100000000000000000011 /* PavlakLinkViewModel.swift */,
+				F00100000000000000000012 /* PhotoAlbumService.swift */,
+				F00100000000000000000013 /* PhotoAlbumViews.swift */,
+				F00100000000000000000014 /* ConnectorRegistry.swift */,
+				F00100000000000000000015 /* ConnectionsView.swift */,
+				F00100000000000000000016 /* UniversalResultComponents.swift */,
+				F00100000000000000000017 /* PavlakErrorReporter.swift */,
+				F00100000000000000000018 /* PavlakExecutionPipeline.swift */,
+				F00100000000000000000019 /* PavlakLinkAuthentication.swift */,
+				F00100000000000000000020 /* PhotoSpotlightIndex.swift */,
+				F00100000000000000000021 /* OpenAIUsagePolicy.swift */,
+			);
+			path = Sources/Pavlek;
+			sourceTree = SOURCE_ROOT;
+		};
+		A00100000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0010000000000000000000D /* Pavlak Photo Search.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C00100000000000000000001 /* Pavlak Photo Search */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C00100000000000000000002 /* Build configuration list for PBXNativeTarget "Pavlak Photo Search" */;
+			buildPhases = (
+				D00100000000000000000002 /* Sources */,
+				D00100000000000000000001 /* Frameworks */,
+				D00100000000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pavlak Photo Search";
+			productName = PavlakPhotoSearch;
+			productReference = F0010000000000000000000D /* Pavlak Photo Search.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C00100000000000000000003 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					C00100000000000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = C00100000000000000000004 /* Build configuration list for PBXProject "PavlakIOS" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = pt_BR;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				pt_BR,
+				Base,
+			);
+			mainGroup = A00100000000000000000001;
+			productRefGroup = A00100000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C00100000000000000000001 /* Pavlak Photo Search */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D00100000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D00100000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B00100000000000000000001 /* AgentCore.swift in Sources */,
+				B00100000000000000000035 /* IOSOpenAISettingsView.swift in Sources */,
+				B00100000000000000000036 /* PavlakAIConfiguration.swift in Sources */,
+				B00100000000000000000037 /* CloudSafety.swift in Sources */,
+				B00100000000000000000034 /* IOSCommandRouting.swift in Sources */,
+				B00100000000000000000033 /* IOSDocumentStore.swift in Sources */,
+				B00100000000000000000032 /* OpenAIKeyStore.swift in Sources */,
+				B00100000000000000000031 /* IOSChatState.swift in Sources */,
+				B00100000000000000000030 /* IOSChatClient.swift in Sources */,
+				B00100000000000000000002 /* AgentModels.swift in Sources */,
+				B00100000000000000000003 /* ContentView.swift in Sources */,
+				B00100000000000000000004 /* IOSContentView.swift in Sources */,
+				B00100000000000000000005 /* IntentParser.swift in Sources */,
+				B00100000000000000000006 /* ModelClient.swift in Sources */,
+				B00100000000000000000007 /* PavlekApp.swift in Sources */,
+				B00100000000000000000008 /* PhotoIndexModels.swift in Sources */,
+				B00100000000000000000009 /* PhotoIndexStore.swift in Sources */,
+				B0010000000000000000000A /* PhotoIndexer.swift in Sources */,
+				B0010000000000000000000B /* PhotoLibraryService.swift in Sources */,
+				B0010000000000000000000C /* ToolRouter.swift in Sources */,
+				B0010000000000000000000D /* PavlakLinkMessage.swift in Sources */,
+				B0010000000000000000000E /* PavlakLinkService.swift in Sources */,
+				B0010000000000000000000F /* PavlakLinkStatusView.swift in Sources */,
+				B00100000000000000000010 /* PavlakLinkViewModel.swift in Sources */,
+				B00100000000000000000011 /* PhotoAlbumService.swift in Sources */,
+				B00100000000000000000012 /* PhotoAlbumViews.swift in Sources */,
+				B00100000000000000000013 /* ConnectorRegistry.swift in Sources */,
+				B00100000000000000000014 /* ConnectionsView.swift in Sources */,
+				B00100000000000000000015 /* UniversalResultComponents.swift in Sources */,
+				B00100000000000000000016 /* PavlakErrorReporter.swift in Sources */,
+				B00100000000000000000017 /* PavlakExecutionPipeline.swift in Sources */,
+				B00100000000000000000018 /* PavlakLinkAuthentication.swift in Sources */,
+				B00100000000000000000019 /* PhotoSpotlightIndex.swift in Sources */,
+				B00100000000000000000020 /* OpenAIUsagePolicy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E00100000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		E00100000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		E00100000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Support/PavlakIOS-Info.plist";
+				MARKETING_VERSION = 0.2.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pavlak.ios.photosearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E00100000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 7;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Support/PavlakIOS-Info.plist";
+				MARKETING_VERSION = 0.2.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pavlak.ios.photosearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C00100000000000000000002 /* Build configuration list for PBXNativeTarget "Pavlak Photo Search" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E00100000000000000000003 /* Debug */,
+				E00100000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C00100000000000000000004 /* Build configuration list for PBXProject "PavlakIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E00100000000000000000001 /* Debug */,
+				E00100000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C00100000000000000000003 /* Project object */;
+}
