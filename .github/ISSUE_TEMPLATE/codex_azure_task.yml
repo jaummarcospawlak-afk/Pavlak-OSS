@@ -1,0 +1,100 @@
+name: Codex Azure task
+description: Especificação executável preparada no ChatGPT para implementação pelo Codex Azure.
+title: "[codex-azure] "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Segurança
+        Este repositório pode ser público. Não inclua chaves, tokens, documentos, fotos, OCR, caminhos locais, dados pessoais ou estratégia proprietária não destinada à publicação. Para tarefas privadas, faça o handoff diretamente na sessão local do Codex Azure.
+
+  - type: input
+    id: task_id
+    attributes:
+      label: ID da tarefa
+      description: Identificador curto e estável, por exemplo PAV-042.
+      placeholder: PAV-000
+    validations:
+      required: true
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objetivo
+      description: Resultado observável que deve ser obtido.
+    validations:
+      required: true
+
+  - type: textarea
+    id: confirmed_context
+    attributes:
+      label: Contexto confirmado
+      description: Fatos verificados no código ou documentação; não inclua suposições.
+    validations:
+      required: true
+
+  - type: textarea
+    id: allowed_scope
+    attributes:
+      label: Escopo permitido
+      description: Áreas ou arquivos que o executor pode alterar.
+    validations:
+      required: true
+
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Fora de escopo
+      description: O que deve permanecer intocado.
+    validations:
+      required: true
+
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Restrições
+      description: Privacidade, compatibilidade, custos, providers e invariantes que devem ser preservados.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critérios de aceitação
+      description: Liste condições objetivas e verificáveis de conclusão.
+    validations:
+      required: true
+
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validação obrigatória
+      description: Comandos, testes e verificações que devem ser executados.
+    validations:
+      required: true
+
+  - type: textarea
+    id: executor_report
+    attributes:
+      label: Entrega esperada do Codex Azure
+      description: Informe o relatório esperado, incluindo arquivos alterados, testes, resultados, riscos e pendências.
+      value: |
+        STATUS: concluído | parcial | bloqueado
+        ARQUIVOS ALTERADOS:
+        - ...
+
+        VALIDAÇÃO EXECUTADA:
+        - ...
+
+        CRITÉRIOS DE ACEITAÇÃO:
+        - [ ] ...
+
+        PENDÊNCIAS/RISCOS:
+        - ...
+
+        PRÓXIMO PASSO RECOMENDADO:
+        - ...
+    validations:
+      required: true
